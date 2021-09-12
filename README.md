@@ -8,7 +8,7 @@
 
 Everything you need is in `bezier.cpp` and `bezier.h` files.
 
-In `bezier.cpp` is a single function that return an array of vertices (with a given resolution) so you can render your bezeier curve.
+In `bezier.cpp` is a single function that returns an array of vertices (with a given resolution), so you can render your bezeier curve.
 
 The array looks like this:
 
@@ -16,4 +16,5 @@ The array looks like this:
 
 ## Demo
 
-Demo requires you to install SFML library. You can then run it using `compile.sh` file.
+Demo requires you to install SFML library.
+You can then run it using `compile.sh` file.
