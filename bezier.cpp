@@ -2,11 +2,12 @@
 
 float * bezier(float x1, float y1, float x2, float y2, float x3, float y3, unsigned int resolution){
 
-	float h;
-
 	float * array = new float[resolution * 2];
 
-	for(unsigned int i = 0; i < resolution - 1; i++){
+	float h;
+	unsigned int res = resolution - 1; //often used
+
+	for(unsigned int i = 0; i < res; i++){
 
 		h = (float) i / (float) resolution;
 
@@ -23,8 +24,8 @@ float * bezier(float x1, float y1, float x2, float y2, float x3, float y3, unsig
 		array[2*i + 1] = y;
 	}
 
-	array[2*(resolution - 1)] = x3;
-	array[2*(resolution - 1) + 1] = y3;
+	array[2*res] = x3;
+	array[2*res + 1] = y3;
 
 	return array;
 
